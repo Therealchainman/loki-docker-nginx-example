@@ -32,7 +32,7 @@ services:
     - "3000:3000"
 
   loki:
-   image: grafana/loki:2.0.0
+   image: grafana/loki:master
    container_name: loki
    volumes:
      - ./config/loki.yaml:/etc/config/loki.yaml
