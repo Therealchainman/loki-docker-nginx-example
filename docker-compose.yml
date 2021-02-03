@@ -15,7 +15,7 @@ services:
         loki-external-labels: job=dockerlogs,owner=ruan,environment=development
 
   logger-app:
-    image: ctovena/logger:0.1
+    image: ctovena/loki:logql-parser-5e0238e
     container_name: logger
     logging:
       driver: loki
